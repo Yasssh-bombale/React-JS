@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+nav {
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav > a {
+  font: 600 1.5rem cursive;
+  text-decoration: none;
+  color: rgb(37, 37, 164);
+  margin: 0 10px;
+}
