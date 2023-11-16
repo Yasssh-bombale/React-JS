@@ -33,6 +33,8 @@ function App() {
 
   const deleteTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    //* filter() method returns an true values if we do like thise  todo.id ===id then it will returns an todo.id which is equal to the targeted id; means it will delete an whole todoarray...and keep the targeted todo lol 😂;
+    // ? hence we do not want this behaviour hence we do todo.id !== id this means that give me all values expect the targeted value;
   };
 
   const toggleComplete = (id) => {
