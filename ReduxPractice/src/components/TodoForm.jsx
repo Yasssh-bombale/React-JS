@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { addTodo } from "../features/Todo/TodoSlice";
 const TodoForm = () => {
   const [todoMsg, setTodoMsg] = useState("");
-  // console.log(todoMsg);
 
   const dispatch = useDispatch();
   // ! useDispatch() is used to store data from components to redux store;and here dispatch is an method which accepts an reducer as parameter ;which may be an addTodo and deleteTodo from todoSlice.js;

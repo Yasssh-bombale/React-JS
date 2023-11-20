@@ -22,7 +22,17 @@ export const todoSlice = createSlice({
     updateTodo: (state, action) => {
       state.todos.map((prevTodo) => (prevTodo.id === id ? "" : ""));
     },
+    toggleTodo: (state, action) => {
+      const todo = state.todos;
+
+      state.todos = todo.map((prevTodo) =>
+        prevTodo.id === action.payload
+          ? { ...todo, isCompleted: !prevTodo.isCompleted }
+          : prevTodo
+      );
+    },
   },
 });
-export const { addTodo, deleteTodo, updateTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo, updateTodo, toggleTodo } =
+  todoSlice.actions;
 export default todoSlice.reducer;

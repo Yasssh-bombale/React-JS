@@ -5,7 +5,7 @@ import TodoItems from "./components/TodoItems";
 
 function App() {
   const todos = useSelector((state) => state.todos);
-  // console.log(todos);
+  console.log(todos);
 
   // * useSelector() accepts an one callback function in which we are having an state as parameter and access to all states hence in state currently is todos array is present we can acccess it by "state.todos";
 
