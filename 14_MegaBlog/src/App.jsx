@@ -27,6 +27,7 @@ function App() {
     <div className="min-h-screen border flex flex-wrap content-between ">
       <div className="w-full ">
         <Header />
+
         <main>
           TODO: <Outlet />
         </main>
